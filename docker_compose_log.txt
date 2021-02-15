@@ -1,0 +1,464 @@
+
+C:\Users\Hari Krishna\work\microservices-in-action\spring-microservices-v2-main\04.docker>docker-compose up
+Starting 04docker_naming-server_1 ... done                                                                                                                                                                                                   Starting rabbitmq                 ... done                                                                                                                                                                                                   Starting zipkin                         ... done                                                                                                                                                                                             Starting 04docker_currency-exchange_1   ... done                                                                                                                                                                                             Starting 04docker_currency-conversion_1 ... done                                                                                                                                                                                             Starting 04docker_api-gateway_1         ... done                                                                                                                                                                                             Attaching to rabbitmq, 04docker_naming-server_1, zipkin, 04docker_currency-exchange_1, 04docker_api-gateway_1, 04docker_currency-conversion_1
+api-gateway_1          | Setting Active Processor Count to 8
+currency-exchange_1    | Setting Active Processor Count to 8
+naming-server_1        | Setting Active Processor Count to 8
+naming-server_1        | Calculated JVM Memory Configuration: -XX:MaxDirectMemorySize=10M -Xmx86988K -XX:MaxMetaspaceSize=117811K -XX:ReservedCodeCacheSize=240M -Xss1M (Total Memory: 700M, Thread Count: 250, Loaded Class Count: 18386, Headroom: 0%)
+rabbitmq               | Configuring logger redirection
+naming-server_1        | Adding 129 container CA certificates to JVM truststore
+currency-conversion_1  | Setting Active Processor Count to 8
+naming-server_1        | Spring Cloud Bindings Enabled
+naming-server_1        | Picked up JAVA_TOOL_OPTIONS: -Djava.security.properties=/layers/paketo-buildpacks_bellsoft-liberica/java-security-properties/java-security.properties -agentpath:/layers/paketo-buildpacks_bellsoft-liberica/jvmkill/jvmkill-1.16.0-RELEASE.so=printHeapHistogram=1 -XX:ActiveProcessorCount=8 -XX:MaxDirectMemorySize=10M -Xmx86988K -XX:MaxMetaspaceSize=117811K -XX:ReservedCodeCacheSize=240M -Xss1M -Dorg.springframework.cloud.bindings.boot.enable=true
+currency-exchange_1    | Calculated JVM Memory Configuration: -XX:MaxDirectMemorySize=10M -Xmx60956K -XX:MaxMetaspaceSize=143843K -XX:ReservedCodeCacheSize=240M -Xss1M (Total Memory: 700M, Thread Count: 250, Loaded Class Count: 22982, Headroom: 0%)
+api-gateway_1          | Calculated JVM Memory Configuration: -XX:MaxDirectMemorySize=10M -Xmx287716K -XX:MaxMetaspaceSize=121883K -XX:ReservedCodeCacheSize=240M -Xss1M (Total Memory: 700M, Thread Count: 50, Loaded Class Count: 19105, Headroom: 0%)
+currency-exchange_1    | Adding 129 container CA certificates to JVM truststore
+api-gateway_1          | Adding 129 container CA certificates to JVM truststore
+currency-conversion_1  | Calculated JVM Memory Configuration: -XX:MaxDirectMemorySize=10M -Xmx84813K -XX:MaxMetaspaceSize=119986K -XX:ReservedCodeCacheSize=240M -Xss1M (Total Memory: 700M, Thread Count: 250, Loaded Class Count: 18770, Headroom: 0%)
+currency-conversion_1  | Adding 129 container CA certificates to JVM truststore
+currency-exchange_1    | Spring Cloud Bindings Enabled
+currency-exchange_1    | Picked up JAVA_TOOL_OPTIONS: -Djava.security.properties=/layers/paketo-buildpacks_bellsoft-liberica/java-security-properties/java-security.properties -agentpath:/layers/paketo-buildpacks_bellsoft-liberica/jvmkill/jvmkill-1.16.0-RELEASE.so=printHeapHistogram=1 -XX:ActiveProcessorCount=8 -XX:MaxDirectMemorySize=10M -Xmx60956K -XX:MaxMetaspaceSize=143843K -XX:ReservedCodeCacheSize=240M -Xss1M -Dorg.springframework.cloud.bindings.boot.enable=true
+api-gateway_1          | Spring Cloud Bindings Enabled
+api-gateway_1          | Picked up JAVA_TOOL_OPTIONS: -Djava.security.properties=/layers/paketo-buildpacks_bellsoft-liberica/java-security-properties/java-security.properties -agentpath:/layers/paketo-buildpacks_bellsoft-liberica/jvmkill/jvmkill-1.16.0-RELEASE.so=printHeapHistogram=1 -XX:ActiveProcessorCount=8 -XX:MaxDirectMemorySize=10M -Xmx287716K -XX:MaxMetaspaceSize=121883K -XX:ReservedCodeCacheSize=240M -Xss1M -Dorg.springframework.cloud.bindings.boot.enable=true
+currency-conversion_1  | Spring Cloud Bindings Enabled
+currency-conversion_1  | Picked up JAVA_TOOL_OPTIONS: -Djava.security.properties=/layers/paketo-buildpacks_bellsoft-liberica/java-security-properties/java-security.properties -agentpath:/layers/paketo-buildpacks_bellsoft-liberica/jvmkill/jvmkill-1.16.0-RELEASE.so=printHeapHistogram=1 -XX:ActiveProcessorCount=8 -XX:MaxDirectMemorySize=10M -Xmx84813K -XX:MaxMetaspaceSize=119986K -XX:ReservedCodeCacheSize=240M -Xss1M -Dorg.springframework.cloud.bindings.boot.enable=true
+currency-conversion_1  |
+currency-conversion_1  |   .   ____          _            __ _ _
+currency-conversion_1  |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+currency-conversion_1  | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+currency-conversion_1  |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+currency-conversion_1  |   '  |____| .__|_| |_|_| |_\__, | / / / /
+currency-conversion_1  |  =========|_|==============|___/=/_/_/_/
+naming-server_1        |
+naming-server_1        |   .   ____          _            __ _ _
+naming-server_1        |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+naming-server_1        | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+naming-server_1        |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+naming-server_1        |   '  |____| .__|_| |_|_| |_\__, | / / / /
+naming-server_1        |  =========|_|==============|___/=/_/_/_/
+currency-conversion_1  |  :: Spring Boot ::                (v2.4.1)
+currency-conversion_1  |
+naming-server_1        |  :: Spring Boot ::                (v2.4.1)
+naming-server_1        |
+currency-exchange_1    |
+currency-exchange_1    |   .   ____          _            __ _ _
+currency-exchange_1    |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+currency-exchange_1    | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+currency-exchange_1    |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+currency-exchange_1    |   '  |____| .__|_| |_|_| |_\__, | / / / /
+currency-exchange_1    |  =========|_|==============|___/=/_/_/_/
+currency-exchange_1    |  :: Spring Boot ::                (v2.4.1)
+currency-exchange_1    |
+api-gateway_1          |
+api-gateway_1          |   .   ____          _            __ _ _
+api-gateway_1          |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+api-gateway_1          | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+api-gateway_1          |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+api-gateway_1          |   '  |____| .__|_| |_|_| |_\__, | / / / /
+api-gateway_1          |  =========|_|==============|___/=/_/_/_/
+api-gateway_1          |  :: Spring Boot ::                (v2.4.1)
+api-gateway_1          |
+currency-conversion_1  | 2021-02-15 04:57:12.120  INFO [currency-conversion,,] 1 --- [           main] m.c.CurrencyConversionServiceApplication : Starting CurrencyConversionServiceApplication v0.0.1-SNAPSHOT using Java 1.8.0_282 on 61ccd1bfbeca with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+currency-conversion_1  | 2021-02-15 04:57:12.131  INFO [currency-conversion,,] 1 --- [           main] m.c.CurrencyConversionServiceApplication : No active profile set, falling back to default profiles: default
+api-gateway_1          | 2021-02-15 04:57:12.166  INFO [api-gateway,,] 1 --- [           main] c.i.m.apigateway.ApiGatewayApplication   : Starting ApiGatewayApplication v0.0.1-SNAPSHOT using Java 1.8.0_282 on 587e9980cd6a with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+api-gateway_1          | 2021-02-15 04:57:12.173  INFO [api-gateway,,] 1 --- [           main] c.i.m.apigateway.ApiGatewayApplication   : No active profile set, falling back to default profiles: default
+currency-exchange_1    | 2021-02-15 04:57:12.226  INFO [currency-exchange,,] 1 --- [           main] i.m.c.CurrencyExchangeServiceApplication : Starting CurrencyExchangeServiceApplication v0.0.1-SNAPSHOT using Java 1.8.0_282 on d52ddf54a7a4 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+currency-exchange_1    | 2021-02-15 04:57:12.236  INFO [currency-exchange,,] 1 --- [           main] i.m.c.CurrencyExchangeServiceApplication : No active profile set, falling back to default profiles: default
+zipkin                 |
+zipkin                 |                   oo
+zipkin                 |                  oooo
+zipkin                 |                 oooooo
+zipkin                 |                oooooooo
+zipkin                 |               oooooooooo
+zipkin                 |              oooooooooooo
+zipkin                 |            ooooooo  ooooooo
+zipkin                 |           oooooo     ooooooo
+zipkin                 |          oooooo       ooooooo
+zipkin                 |         oooooo   o  o   oooooo
+zipkin                 |        oooooo   oo  oo   oooooo
+zipkin                 |      ooooooo  oooo  oooo  ooooooo
+zipkin                 |     oooooo   ooooo  ooooo  ooooooo
+zipkin                 |    oooooo   oooooo  oooooo  ooooooo
+zipkin                 |   oooooooo      oo  oo      oooooooo
+zipkin                 |   ooooooooooooo oo  oo ooooooooooooo
+zipkin                 |       oooooooooooo  oooooooooooo
+zipkin                 |           oooooooo  oooooooo
+zipkin                 |               oooo  oooo
+zipkin                 |
+zipkin                 |      ________ ____  _  _____ _   _
+zipkin                 |     |__  /_ _|  _ \| |/ /_ _| \ | |
+zipkin                 |       / / | || |_) | ' / | ||  \| |
+zipkin                 |      / /_ | ||  __/| . \ | || |\  |
+zipkin                 |     |____|___|_|   |_|\_\___|_| \_|
+zipkin                 |
+zipkin                 | :: version 2.23.2 :: commit 7bf3aab ::
+zipkin                 |
+naming-server_1        | 2021-02-15 04:57:12.268  INFO 1 --- [           main] c.i.m.n.NamingServerApplication          : Starting NamingServerApplication v0.0.1-SNAPSHOT using Java 1.8.0_282 on d6f13f54470b with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+naming-server_1        | 2021-02-15 04:57:12.381  INFO 1 --- [           main] c.i.m.n.NamingServerApplication          : No active profile set, falling back to default profiles: default
+rabbitmq               | 2021-02-15 04:57:14.259 [debug] <0.287.0> Lager installed handler error_logger_lager_h into error_logger
+rabbitmq               | 2021-02-15 04:57:14.298 [debug] <0.290.0> Lager installed handler lager_forwarder_backend into error_logger_lager_event
+rabbitmq               | 2021-02-15 04:57:14.298 [debug] <0.293.0> Lager installed handler lager_forwarder_backend into rabbit_log_lager_event
+rabbitmq               | 2021-02-15 04:57:14.298 [debug] <0.296.0> Lager installed handler lager_forwarder_backend into rabbit_log_channel_lager_event
+rabbitmq               | 2021-02-15 04:57:14.298 [debug] <0.299.0> Lager installed handler lager_forwarder_backend into rabbit_log_connection_lager_event
+rabbitmq               | 2021-02-15 04:57:14.298 [debug] <0.302.0> Lager installed handler lager_forwarder_backend into rabbit_log_feature_flags_lager_event
+rabbitmq               | 2021-02-15 04:57:14.298 [debug] <0.305.0> Lager installed handler lager_forwarder_backend into rabbit_log_federation_lager_event
+rabbitmq               | 2021-02-15 04:57:14.298 [debug] <0.308.0> Lager installed handler lager_forwarder_backend into rabbit_log_ldap_lager_event
+rabbitmq               | 2021-02-15 04:57:14.298 [debug] <0.311.0> Lager installed handler lager_forwarder_backend into rabbit_log_mirroring_lager_event
+rabbitmq               | 2021-02-15 04:57:14.298 [debug] <0.314.0> Lager installed handler lager_forwarder_backend into rabbit_log_prelaunch_lager_event
+rabbitmq               | 2021-02-15 04:57:14.298 [debug] <0.317.0> Lager installed handler lager_forwarder_backend into rabbit_log_queue_lager_event
+rabbitmq               | 2021-02-15 04:57:14.298 [debug] <0.320.0> Lager installed handler lager_forwarder_backend into rabbit_log_ra_lager_event
+rabbitmq               | 2021-02-15 04:57:14.298 [debug] <0.323.0> Lager installed handler lager_forwarder_backend into rabbit_log_shovel_lager_event
+rabbitmq               | 2021-02-15 04:57:14.298 [debug] <0.326.0> Lager installed handler lager_forwarder_backend into rabbit_log_upgrade_lager_event
+rabbitmq               | 2021-02-15 04:57:14.413 [info] <0.44.0> Application lager started on node rabbit@9a2984b335e7
+rabbitmq               | 2021-02-15 04:57:14.761 [debug] <0.283.0> Lager installed handler lager_backend_throttle into lager_event
+naming-server_1        | 2021-02-15 04:57:23.138  INFO 1 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a23017d4-6d5c-3155-a43e-ed8658ad228c
+currency-exchange_1    | 2021-02-15 04:57:23.206  INFO [currency-exchange,,] 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+api-gateway_1          | 2021-02-15 04:57:24.023  INFO [api-gateway,,] 1 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=035dcfaa-d69f-39fe-881d-35e1917e28df
+currency-conversion_1  | 2021-02-15 04:57:24.307  INFO [currency-conversion,,] 1 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=715b8201-afca-3e3e-a19b-c0211705be10
+currency-exchange_1    | 2021-02-15 04:57:25.016  INFO [currency-exchange,,] 1 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1705 ms. Found 1 JPA repository interfaces.
+naming-server_1        | 2021-02-15 04:57:25.384  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8761 (http)
+naming-server_1        | 2021-02-15 04:57:25.488  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+naming-server_1        | 2021-02-15 04:57:25.489  INFO 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+naming-server_1        | 2021-02-15 04:57:25.943  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+naming-server_1        | 2021-02-15 04:57:25.944  INFO 1 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 12851 ms
+api-gateway_1          | 2021-02-15 04:57:26.141  INFO [api-gateway,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+api-gateway_1          | 2021-02-15 04:57:26.195  INFO [api-gateway,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+api-gateway_1          | 2021-02-15 04:57:26.229  INFO [api-gateway,,] 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+rabbitmq               | 2021-02-15 04:57:26.399 [info] <0.44.0> Application mnesia started on node rabbit@9a2984b335e7
+rabbitmq               | 2021-02-15 04:57:26.402 [info] <0.272.0>
+rabbitmq               |  Starting RabbitMQ 3.8.11 on Erlang 23.2.3
+rabbitmq               |  Copyright (c) 2007-2020 VMware, Inc. or its affiliates.
+rabbitmq               |  Licensed under the MPL 2.0. Website: https://rabbitmq.com
+rabbitmq               |
+rabbitmq               |   ##  ##      RabbitMQ 3.8.11
+rabbitmq               |   ##  ##
+rabbitmq               |   ##########  Copyright (c) 2007-2020 VMware, Inc. or its affiliates.
+rabbitmq               |   ######  ##
+rabbitmq               |   ##########  Licensed under the MPL 2.0. Website: https://rabbitmq.com
+rabbitmq               |
+rabbitmq               |   Doc guides: https://rabbitmq.com/documentation.html
+rabbitmq               |   Support:    https://rabbitmq.com/contact.html
+rabbitmq               |   Tutorials:  https://rabbitmq.com/getstarted.html
+rabbitmq               |   Monitoring: https://rabbitmq.com/monitoring.html
+rabbitmq               |
+rabbitmq               |   Logs: <stdout>
+rabbitmq               |
+rabbitmq               |   Config file(s): /etc/rabbitmq/rabbitmq.conf
+rabbitmq               |
+rabbitmq               |   Starting broker...2021-02-15 04:57:26.408 [info] <0.272.0>
+rabbitmq               |  node           : rabbit@9a2984b335e7
+rabbitmq               |  home dir       : /var/lib/rabbitmq
+rabbitmq               |  config file(s) : /etc/rabbitmq/rabbitmq.conf
+rabbitmq               |  cookie hash    : aM4cq1fKRds1MYmJRCHBuQ==
+rabbitmq               |  log(s)         : <stdout>
+rabbitmq               |  database dir   : /var/lib/rabbitmq/mnesia/rabbit@9a2984b335e7
+rabbitmq               | 2021-02-15 04:57:26.411 [warning] <0.272.0> Erlang VM is running with 1 I/O threads, file I/O performance may worsen
+zipkin                 | 2021-02-15 04:57:27.233  INFO [/] 1 --- [oss-http-*:9411] c.l.a.s.Server                           : Serving HTTP at /0.0.0.0:9411 - http://127.0.0.1:9411/
+currency-exchange_1    | 2021-02-15 04:57:28.149  INFO [currency-exchange,,] 1 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=80495038-2a89-3b97-a7e7-cd4f27033787
+currency-conversion_1  | 2021-02-15 04:57:29.414  INFO [currency-conversion,,] 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8100 (http)
+currency-conversion_1  | 2021-02-15 04:57:29.516  INFO [currency-conversion,,] 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+currency-conversion_1  | 2021-02-15 04:57:29.518  INFO [currency-conversion,,] 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+rabbitmq               | 2021-02-15 04:57:29.621 [info] <0.272.0> Feature flags: list of feature flags found:
+rabbitmq               | 2021-02-15 04:57:29.621 [info] <0.272.0> Feature flags:   [x] drop_unroutable_metric
+rabbitmq               | 2021-02-15 04:57:29.621 [info] <0.272.0> Feature flags:   [x] empty_basic_get_metric
+rabbitmq               | 2021-02-15 04:57:29.621 [info] <0.272.0> Feature flags:   [x] implicit_default_bindings
+rabbitmq               | 2021-02-15 04:57:29.621 [info] <0.272.0> Feature flags:   [x] maintenance_mode_status
+rabbitmq               | 2021-02-15 04:57:29.622 [info] <0.272.0> Feature flags:   [x] quorum_queue
+rabbitmq               | 2021-02-15 04:57:29.623 [info] <0.272.0> Feature flags:   [x] user_limits
+rabbitmq               | 2021-02-15 04:57:29.624 [info] <0.272.0> Feature flags:   [x] virtual_host_metadata
+rabbitmq               | 2021-02-15 04:57:29.625 [info] <0.272.0> Feature flags: feature flag states written to disk: yes
+currency-conversion_1  | 2021-02-15 04:57:29.913  INFO [currency-conversion,,] 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+currency-conversion_1  | 2021-02-15 04:57:29.913  INFO [currency-conversion,,] 1 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 17042 ms
+naming-server_1        | 2021-02-15 04:57:30.241  INFO 1 --- [           main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+naming-server_1        | 2021-02-15 04:57:30.818  INFO 1 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+naming-server_1        | 2021-02-15 04:57:30.829  INFO 1 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+rabbitmq               | 2021-02-15 04:57:31.068 [info] <0.272.0> Running boot step pre_boot defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.069 [info] <0.272.0> Running boot step rabbit_core_metrics defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.086 [info] <0.272.0> Running boot step rabbit_alarm defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.217 [info] <0.434.0> Memory high watermark set to 200 MiB (209715200 bytes) of 500 MiB (524288000 bytes) total
+rabbitmq               | 2021-02-15 04:57:31.276 [info] <0.436.0> Enabling free disk space monitoring
+rabbitmq               | 2021-02-15 04:57:31.277 [info] <0.436.0> Disk free limit set to 50MB
+rabbitmq               | 2021-02-15 04:57:31.301 [info] <0.272.0> Running boot step code_server_cache defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.303 [info] <0.272.0> Running boot step file_handle_cache defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.306 [info] <0.439.0> Limiting to approx 1048479 file handles (943629 sockets)
+rabbitmq               | 2021-02-15 04:57:31.319 [info] <0.440.0> FHC read buffering:  OFF
+rabbitmq               | 2021-02-15 04:57:31.319 [info] <0.440.0> FHC write buffering: ON
+rabbitmq               | 2021-02-15 04:57:31.319 [info] <0.272.0> Running boot step worker_pool defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.320 [info] <0.375.0> Will use 8 processes for default worker pool
+rabbitmq               | 2021-02-15 04:57:31.320 [info] <0.375.0> Starting worker pool 'worker_pool' with 8 processes in it
+rabbitmq               | 2021-02-15 04:57:31.321 [info] <0.272.0> Running boot step database defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.348 [info] <0.272.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+rabbitmq               | 2021-02-15 04:57:31.397 [info] <0.272.0> Successfully synced tables from a peer
+rabbitmq               | 2021-02-15 04:57:31.398 [info] <0.272.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+rabbitmq               | 2021-02-15 04:57:31.399 [info] <0.272.0> Successfully synced tables from a peer
+rabbitmq               | 2021-02-15 04:57:31.620 [info] <0.272.0> Waiting for Mnesia tables for 30000 ms, 9 retries left
+rabbitmq               | 2021-02-15 04:57:31.620 [info] <0.272.0> Successfully synced tables from a peer
+rabbitmq               | 2021-02-15 04:57:31.620 [info] <0.272.0> Peer discovery backend rabbit_peer_discovery_classic_config does not support registration, skipping registration.
+rabbitmq               | 2021-02-15 04:57:31.620 [info] <0.272.0> Running boot step database_sync defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.620 [info] <0.272.0> Running boot step feature_flags defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.620 [info] <0.272.0> Running boot step codec_correctness_check defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.620 [info] <0.272.0> Running boot step external_infrastructure defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.620 [info] <0.272.0> Running boot step rabbit_registry defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.621 [info] <0.272.0> Running boot step rabbit_auth_mechanism_cr_demo defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.621 [info] <0.272.0> Running boot step rabbit_queue_location_random defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.621 [info] <0.272.0> Running boot step rabbit_event defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.621 [info] <0.272.0> Running boot step rabbit_auth_mechanism_amqplain defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.621 [info] <0.272.0> Running boot step rabbit_auth_mechanism_plain defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.628 [info] <0.272.0> Running boot step rabbit_exchange_type_direct defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.630 [info] <0.272.0> Running boot step rabbit_exchange_type_fanout defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.631 [info] <0.272.0> Running boot step rabbit_exchange_type_headers defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.632 [info] <0.272.0> Running boot step rabbit_exchange_type_topic defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.633 [info] <0.272.0> Running boot step rabbit_mirror_queue_mode_all defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.634 [info] <0.272.0> Running boot step rabbit_mirror_queue_mode_exactly defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.634 [info] <0.272.0> Running boot step rabbit_mirror_queue_mode_nodes defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.635 [info] <0.272.0> Running boot step rabbit_priority_queue defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.635 [info] <0.272.0> Priority queues enabled, real BQ is rabbit_variable_queue
+rabbitmq               | 2021-02-15 04:57:31.635 [info] <0.272.0> Running boot step rabbit_queue_location_client_local defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.635 [info] <0.272.0> Running boot step rabbit_queue_location_min_masters defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.636 [info] <0.272.0> Running boot step kernel_ready defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.636 [info] <0.272.0> Running boot step rabbit_sysmon_minder defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.636 [info] <0.272.0> Running boot step rabbit_epmd_monitor defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.650 [info] <0.466.0> epmd monitor knows us, inter-node communication (distribution) port: 25672
+rabbitmq               | 2021-02-15 04:57:31.651 [info] <0.272.0> Running boot step guid_generator defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.785 [info] <0.272.0> Running boot step rabbit_node_monitor defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.786 [info] <0.470.0> Starting rabbit_node_monitor
+rabbitmq               | 2021-02-15 04:57:31.787 [info] <0.272.0> Running boot step delegate_sup defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.793 [info] <0.272.0> Running boot step rabbit_memory_monitor defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.794 [info] <0.272.0> Running boot step core_initialized defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.794 [info] <0.272.0> Running boot step upgrade_queues defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.965 [info] <0.272.0> Running boot step channel_tracking defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.966 [info] <0.272.0> Setting up a table for channel tracking on this node: tracked_channel_on_node_rabbit@9a2984b335e7
+rabbitmq               | 2021-02-15 04:57:31.966 [info] <0.272.0> Setting up a table for channel tracking on this node: tracked_channel_table_per_user_on_node_rabbit@9a2984b335e7
+rabbitmq               | 2021-02-15 04:57:31.967 [info] <0.272.0> Running boot step rabbit_channel_tracking_handler defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.967 [info] <0.272.0> Running boot step connection_tracking defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.968 [info] <0.272.0> Setting up a table for connection tracking on this node: tracked_connection_on_node_rabbit@9a2984b335e7
+rabbitmq               | 2021-02-15 04:57:31.968 [info] <0.272.0> Setting up a table for per-vhost connection counting on this node: tracked_connection_per_vhost_on_node_rabbit@9a2984b335e7
+rabbitmq               | 2021-02-15 04:57:31.968 [info] <0.272.0> Setting up a table for per-user connection counting on this node: tracked_connection_table_per_user_on_node_rabbit@9a2984b335e7
+rabbitmq               | 2021-02-15 04:57:31.969 [info] <0.272.0> Running boot step rabbit_connection_tracking_handler defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.969 [info] <0.272.0> Running boot step rabbit_exchange_parameters defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.969 [info] <0.272.0> Running boot step rabbit_mirror_queue_misc defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.970 [info] <0.272.0> Running boot step rabbit_policies defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.974 [info] <0.272.0> Running boot step rabbit_policy defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.977 [info] <0.272.0> Running boot step rabbit_queue_location_validator defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.979 [info] <0.272.0> Running boot step rabbit_quorum_memory_manager defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.979 [info] <0.272.0> Running boot step rabbit_vhost_limit defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.979 [info] <0.272.0> Running boot step rabbit_mgmt_reset_handler defined by app rabbitmq_management
+rabbitmq               | 2021-02-15 04:57:31.979 [info] <0.272.0> Running boot step rabbit_mgmt_db_handler defined by app rabbitmq_management_agent
+rabbitmq               | 2021-02-15 04:57:31.979 [info] <0.272.0> Management plugin: using rates mode 'basic'
+rabbitmq               | 2021-02-15 04:57:31.981 [info] <0.272.0> Running boot step recovery defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:31.999 [info] <0.506.0> Making sure data directory '/var/lib/rabbitmq/mnesia/rabbit@9a2984b335e7/msg_stores/vhosts/628WB79CIFDYO9LJI6DKMI09L' for vhost '/' exists
+rabbitmq               | 2021-02-15 04:57:32.056 [info] <0.506.0> Starting message stores for vhost '/'
+rabbitmq               | 2021-02-15 04:57:32.060 [info] <0.510.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_transient": using rabbit_msg_store_ets_index to provide index
+rabbitmq               | 2021-02-15 04:57:32.137 [info] <0.506.0> Started message store of type transient for vhost '/'
+rabbitmq               | 2021-02-15 04:57:32.138 [info] <0.514.0> Message store "628WB79CIFDYO9LJI6DKMI09L/msg_store_persistent": using rabbit_msg_store_ets_index to provide index
+rabbitmq               | 2021-02-15 04:57:32.198 [info] <0.506.0> Started message store of type persistent for vhost '/'
+rabbitmq               | 2021-02-15 04:57:32.205 [info] <0.272.0> Running boot step empty_db_check defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:32.205 [info] <0.272.0> Will not seed default virtual host and user: have definitions to load...
+rabbitmq               | 2021-02-15 04:57:32.205 [info] <0.272.0> Running boot step rabbit_looking_glass defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:32.205 [info] <0.272.0> Running boot step rabbit_core_metrics_gc defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:32.206 [info] <0.272.0> Running boot step background_gc defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:32.207 [info] <0.272.0> Running boot step routing_ready defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:32.207 [info] <0.272.0> Running boot step pre_flight defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:32.207 [info] <0.272.0> Running boot step notify_cluster defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:32.207 [info] <0.272.0> Running boot step networking defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:32.207 [info] <0.272.0> Running boot step definition_import_worker_pool defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:32.208 [info] <0.375.0> Starting worker pool 'definition_import_pool' with 8 processes in it
+rabbitmq               | 2021-02-15 04:57:32.213 [info] <0.272.0> Running boot step cluster_name defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:32.213 [info] <0.272.0> Running boot step direct_client defined by app rabbit
+rabbitmq               | 2021-02-15 04:57:32.214 [info] <0.272.0> Running boot step rabbit_management_load_definitions defined by app rabbitmq_management
+rabbitmq               | 2021-02-15 04:57:32.215 [info] <0.546.0> Resetting node maintenance status
+rabbitmq               | 2021-02-15 04:57:32.231 [info] <0.44.0> Application rabbit started on node rabbit@9a2984b335e7
+rabbitmq               | 2021-02-15 04:57:32.286 [info] <0.44.0> Application rabbitmq_management_agent started on node rabbit@9a2984b335e7
+rabbitmq               | 2021-02-15 04:57:32.311 [info] <0.44.0> Application cowlib started on node rabbit@9a2984b335e7
+rabbitmq               | 2021-02-15 04:57:32.316 [info] <0.44.0> Application cowboy started on node rabbit@9a2984b335e7
+rabbitmq               | 2021-02-15 04:57:32.317 [info] <0.44.0> Application rabbitmq_web_dispatch started on node rabbit@9a2984b335e7
+rabbitmq               | 2021-02-15 04:57:32.317 [info] <0.44.0> Application amqp_client started on node rabbit@9a2984b335e7
+rabbitmq               | 2021-02-15 04:57:32.527 [info] <0.605.0> Management plugin: HTTP (non-TLS) listener started on port 15672
+rabbitmq               | 2021-02-15 04:57:32.528 [info] <0.711.0> Statistics database started.
+rabbitmq               | 2021-02-15 04:57:32.528 [info] <0.710.0> Starting worker pool 'management_worker_pool' with 3 processes in it
+rabbitmq               | 2021-02-15 04:57:32.530 [info] <0.44.0> Application rabbitmq_management started on node rabbit@9a2984b335e7
+naming-server_1        | 2021-02-15 04:57:32.654  INFO 1 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+naming-server_1        | 2021-02-15 04:57:32.668  INFO 1 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+rabbitmq               | 2021-02-15 04:57:32.693 [info] <0.44.0> Application prometheus started on node rabbit@9a2984b335e7
+rabbitmq               | 2021-02-15 04:57:32.718 [info] <0.724.0> Prometheus metrics: HTTP (non-TLS) listener started on port 15692
+rabbitmq               | 2021-02-15 04:57:32.718 [info] <0.546.0> Ready to start client connection listeners
+rabbitmq               | 2021-02-15 04:57:32.719 [info] <0.44.0> Application rabbitmq_prometheus started on node rabbit@9a2984b335e7
+rabbitmq               | 2021-02-15 04:57:32.727 [info] <0.843.0> started TCP listener on [::]:5672
+rabbitmq               | 2021-02-15 04:57:33.958 [info] <0.546.0> Server startup complete; 4 plugins started.
+rabbitmq               |  * rabbitmq_prometheus
+rabbitmq               |  * rabbitmq_management
+rabbitmq               |  * rabbitmq_web_dispatch
+rabbitmq               |  * rabbitmq_management_agent
+rabbitmq               |  completed with 4 plugins.
+rabbitmq               | 2021-02-15 04:57:33.958 [info] <0.546.0> Resetting node maintenance status
+api-gateway_1          | 2021-02-15 04:57:34.967  INFO [api-gateway,,] 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+api-gateway_1          | 2021-02-15 04:57:34.967  INFO [api-gateway,,] 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+api-gateway_1          | 2021-02-15 04:57:34.968  INFO [api-gateway,,] 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+api-gateway_1          | 2021-02-15 04:57:34.968  INFO [api-gateway,,] 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+api-gateway_1          | 2021-02-15 04:57:34.973  INFO [api-gateway,,] 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+api-gateway_1          | 2021-02-15 04:57:34.974  INFO [api-gateway,,] 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+api-gateway_1          | 2021-02-15 04:57:34.974  INFO [api-gateway,,] 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+api-gateway_1          | 2021-02-15 04:57:34.975  INFO [api-gateway,,] 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+api-gateway_1          | 2021-02-15 04:57:34.975  INFO [api-gateway,,] 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+api-gateway_1          | 2021-02-15 04:57:34.975  INFO [api-gateway,,] 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+api-gateway_1          | 2021-02-15 04:57:34.977  INFO [api-gateway,,] 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+api-gateway_1          | 2021-02-15 04:57:34.982  INFO [api-gateway,,] 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+api-gateway_1          | 2021-02-15 04:57:34.986  INFO [api-gateway,,] 1 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+currency-exchange_1    | 2021-02-15 04:57:35.274  INFO [currency-exchange,,] 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8000 (http)
+currency-exchange_1    | 2021-02-15 04:57:35.309  INFO [currency-exchange,,] 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+currency-exchange_1    | 2021-02-15 04:57:35.310  INFO [currency-exchange,,] 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+currency-exchange_1    | 2021-02-15 04:57:35.529  INFO [currency-exchange,,] 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+currency-exchange_1    | 2021-02-15 04:57:35.529  INFO [currency-exchange,,] 1 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 22627 ms
+rabbitmq               | 2021-02-15 04:57:36.428 [info] <0.848.0> accepting AMQP connection <0.848.0> (172.19.0.7:37556 -> 172.19.0.2:5672)
+rabbitmq               | 2021-02-15 04:57:36.890 [info] <0.848.0> connection <0.848.0> (172.19.0.7:37556 -> 172.19.0.2:5672): user 'guest' authenticated and granted access to vhost '/'
+naming-server_1        | 2021-02-15 04:57:37.219  INFO 1 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+currency-exchange_1    | 2021-02-15 04:57:37.699  INFO [currency-exchange,,] 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+currency-exchange_1    | 2021-02-15 04:57:39.352  INFO [currency-exchange,,] 1 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+currency-exchange_1    | 2021-02-15 04:57:39.383  INFO [currency-exchange,,] 1 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+rabbitmq               | 2021-02-15 04:57:39.998 [info] <0.862.0> accepting AMQP connection <0.862.0> (172.19.0.6:56258 -> 172.19.0.2:5672)
+rabbitmq               | 2021-02-15 04:57:40.210 [info] <0.862.0> connection <0.862.0> (172.19.0.6:56258 -> 172.19.0.2:5672): user 'guest' authenticated and granted access to vhost '/'
+naming-server_1        | 2021-02-15 04:57:40.862  INFO 1 --- [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+api-gateway_1          | 2021-02-15 04:57:41.343  INFO [api-gateway,,] 1 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+naming-server_1        | 2021-02-15 04:57:41.708  WARN 1 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+naming-server_1        | 2021-02-15 04:57:41.822  INFO 1 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+naming-server_1        | 2021-02-15 04:57:42.310  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+naming-server_1        | 2021-02-15 04:57:42.316  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+naming-server_1        | 2021-02-15 04:57:42.505  INFO 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1613365062501 with initial instances count: 0
+naming-server_1        | 2021-02-15 04:57:42.905  INFO 1 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+naming-server_1        | 2021-02-15 04:57:42.912  INFO 1 --- [           main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+api-gateway_1          | 2021-02-15 04:57:43.105  INFO [api-gateway,,] 1 --- [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+api-gateway_1          | 2021-02-15 04:57:44.314  WARN [api-gateway,,] 1 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+rabbitmq               | 2021-02-15 04:57:44.430 [info] <0.875.0> accepting AMQP connection <0.875.0> (172.19.0.5:52900 -> 172.19.0.2:5672)
+currency-conversion_1  | 2021-02-15 04:57:44.512  INFO [currency-conversion,,] 1 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+rabbitmq               | 2021-02-15 04:57:44.621 [info] <0.875.0> connection <0.875.0> (172.19.0.5:52900 -> 172.19.0.2:5672): user 'guest' authenticated and granted access to vhost '/'
+naming-server_1        | 2021-02-15 04:57:44.685  INFO 1 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+naming-server_1        | 2021-02-15 04:57:44.686  INFO 1 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+naming-server_1        | 2021-02-15 04:57:44.686  INFO 1 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+naming-server_1        | 2021-02-15 04:57:44.696  INFO 1 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+api-gateway_1          | 2021-02-15 04:57:44.754  INFO [api-gateway,,] 1 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+api-gateway_1          | 2021-02-15 04:57:45.301  INFO [api-gateway,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+api-gateway_1          | 2021-02-15 04:57:45.348  INFO [api-gateway,,] 1 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+api-gateway_1          | 2021-02-15 04:57:45.497  INFO [api-gateway,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+api-gateway_1          | 2021-02-15 04:57:45.499  INFO [api-gateway,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+api-gateway_1          | 2021-02-15 04:57:45.503  INFO [api-gateway,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+api-gateway_1          | 2021-02-15 04:57:45.507  INFO [api-gateway,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+api-gateway_1          | 2021-02-15 04:57:45.510  INFO [api-gateway,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+api-gateway_1          | 2021-02-15 04:57:45.512  INFO [api-gateway,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+api-gateway_1          | 2021-02-15 04:57:45.513  INFO [api-gateway,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+naming-server_1        | 2021-02-15 04:57:46.036  INFO 1 --- [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+naming-server_1        | 2021-02-15 04:57:46.242  INFO 1 --- [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+naming-server_1        | 2021-02-15 04:57:46.266  INFO 1 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+naming-server_1        | 2021-02-15 04:57:46.330  INFO 1 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+naming-server_1        | 2021-02-15 04:57:46.557  INFO 1 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application NAMING-SERVER with eureka with status UP
+naming-server_1        | 2021-02-15 04:57:46.598  INFO 1 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+naming-server_1        | 2021-02-15 04:57:46.749  INFO 1 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+naming-server_1        | 2021-02-15 04:57:46.760  INFO 1 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+naming-server_1        | 2021-02-15 04:57:46.761  INFO 1 --- [      Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+naming-server_1        | 2021-02-15 04:57:46.777  INFO 1 --- [      Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+naming-server_1        | 2021-02-15 04:57:46.778  INFO 1 --- [      Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+naming-server_1        | 2021-02-15 04:57:46.854  INFO 1 --- [      Thread-10] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+naming-server_1        | 2021-02-15 04:57:46.963  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8761 (http) with context path ''
+naming-server_1        | 2021-02-15 04:57:46.981  INFO 1 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+naming-server_1        | 2021-02-15 04:57:47.089  INFO 1 --- [           main] c.i.m.n.NamingServerApplication          : Started NamingServerApplication in 37.447 seconds (JVM running for 39.312)
+currency-conversion_1  | 2021-02-15 04:57:48.211  INFO [currency-conversion,,] 1 --- [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+naming-server_1        | 2021-02-15 04:57:48.247  INFO 1 --- [nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+naming-server_1        | 2021-02-15 04:57:48.248  INFO 1 --- [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+naming-server_1        | 2021-02-15 04:57:48.254  INFO 1 --- [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+api-gateway_1          | 2021-02-15 04:57:48.652  INFO [api-gateway,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+api-gateway_1          | 2021-02-15 04:57:48.686  INFO [api-gateway,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+api-gateway_1          | 2021-02-15 04:57:48.725  INFO [api-gateway,,] 1 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+api-gateway_1          | 2021-02-15 04:57:48.802  INFO [api-gateway,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1613365068799 with initial instances count: 0
+api-gateway_1          | 2021-02-15 04:57:48.829  INFO [api-gateway,,] 1 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application API-GATEWAY with eureka with status UP
+api-gateway_1          | 2021-02-15 04:57:48.835  INFO [api-gateway,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1613365068835, current=UP, previous=STARTING]
+api-gateway_1          | 2021-02-15 04:57:48.896  INFO [api-gateway,,] 1 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/587e9980cd6a:api-gateway:8765: registering service...
+currency-conversion_1  | 2021-02-15 04:57:49.039  WARN [currency-conversion,,] 1 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+currency-conversion_1  | 2021-02-15 04:57:49.398  INFO [currency-conversion,,] 1 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+currency-conversion_1  | 2021-02-15 04:57:49.711  INFO [currency-conversion,,] 1 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+currency-exchange_1    | 2021-02-15 04:57:49.766  INFO [currency-exchange,,] 1 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+currency-exchange_1    | 2021-02-15 04:57:49.995  INFO [currency-exchange,,] 1 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+naming-server_1        | 2021-02-15 04:57:50.050  INFO 1 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/587e9980cd6a:api-gateway:8765 with status UP (replication=false)
+api-gateway_1          | 2021-02-15 04:57:50.089  INFO [api-gateway,,] 1 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/587e9980cd6a:api-gateway:8765 - registration status: 204
+currency-conversion_1  | 2021-02-15 04:57:50.232  INFO [currency-conversion,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+currency-conversion_1  | 2021-02-15 04:57:50.262  INFO [currency-conversion,,] 1 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+currency-conversion_1  | 2021-02-15 04:57:50.417  INFO [currency-conversion,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+currency-conversion_1  | 2021-02-15 04:57:50.417  INFO [currency-conversion,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+currency-conversion_1  | 2021-02-15 04:57:50.418  INFO [currency-conversion,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+currency-conversion_1  | 2021-02-15 04:57:50.418  INFO [currency-conversion,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+currency-conversion_1  | 2021-02-15 04:57:50.418  INFO [currency-conversion,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+currency-conversion_1  | 2021-02-15 04:57:50.418  INFO [currency-conversion,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+currency-conversion_1  | 2021-02-15 04:57:50.418  INFO [currency-conversion,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+api-gateway_1          | 2021-02-15 04:57:50.607  INFO [api-gateway,,] 1 --- [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port(s): 8765
+api-gateway_1          | 2021-02-15 04:57:50.628  INFO [api-gateway,,] 1 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8765
+api-gateway_1          | 2021-02-15 04:57:50.911  INFO [api-gateway,,] 1 --- [           main] c.i.m.apigateway.ApiGatewayApplication   : Started ApiGatewayApplication in 41.277 seconds (JVM running for 42.731)
+currency-exchange_1    | 2021-02-15 04:57:51.034  INFO [currency-exchange,,] 1 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+naming-server_1        | 2021-02-15 04:57:51.050  INFO 1 --- [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/587e9980cd6a:api-gateway:8765 with status UP (replication=true)
+currency-conversion_1  | 2021-02-15 04:57:51.642  INFO [currency-conversion,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+currency-conversion_1  | 2021-02-15 04:57:51.684  INFO [currency-conversion,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+currency-conversion_1  | 2021-02-15 04:57:51.728  INFO [currency-conversion,,] 1 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+currency-conversion_1  | 2021-02-15 04:57:51.794  INFO [currency-conversion,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1613365071787 with initial instances count: 0
+currency-conversion_1  | 2021-02-15 04:57:51.855  INFO [currency-conversion,,] 1 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CURRENCY-CONVERSION with eureka with status UP
+currency-conversion_1  | 2021-02-15 04:57:51.858  INFO [currency-conversion,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1613365071858, current=UP, previous=STARTING]
+currency-conversion_1  | 2021-02-15 04:57:51.877  INFO [currency-conversion,,] 1 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CURRENCY-CONVERSION/61ccd1bfbeca:currency-conversion:8100: registering service...
+currency-conversion_1  | 2021-02-15 04:57:52.126  INFO [currency-conversion,,] 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8100 (http) with context path ''
+currency-exchange_1    | 2021-02-15 04:57:52.127  INFO [currency-exchange,,] 1 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+currency-conversion_1  | 2021-02-15 04:57:52.128  INFO [currency-conversion,,] 1 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8100
+currency-conversion_1  | 2021-02-15 04:57:52.274  INFO [currency-conversion,,] 1 --- [           main] m.c.CurrencyConversionServiceApplication : Started CurrencyConversionServiceApplication in 42.539 seconds (JVM running for 43.991)
+naming-server_1        | 2021-02-15 04:57:52.409  INFO 1 --- [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CURRENCY-CONVERSION/61ccd1bfbeca:currency-conversion:8100 with status UP (replication=false)
+currency-conversion_1  | 2021-02-15 04:57:52.417  INFO [currency-conversion,,] 1 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CURRENCY-CONVERSION/61ccd1bfbeca:currency-conversion:8100 - registration status: 204
+naming-server_1        | 2021-02-15 04:57:52.931  INFO 1 --- [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CURRENCY-CONVERSION/61ccd1bfbeca:currency-conversion:8100 with status UP (replication=true)
+currency-exchange_1    | Hibernate: drop table if exists currency_exchange CASCADE
+currency-exchange_1    | Hibernate: create table currency_exchange (id bigint not null, conversion_multiple decimal(19,2), environment varchar(255), currency_from varchar(255), currency_to varchar(255), primary key (id))
+currency-exchange_1    | 2021-02-15 04:57:53.858  INFO [currency-exchange,,] 1 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+currency-exchange_1    | 2021-02-15 04:57:53.877  INFO [currency-exchange,,] 1 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+currency-exchange_1    | 2021-02-15 04:57:56.141  WARN [currency-exchange,,] 1 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+currency-exchange_1    | 2021-02-15 04:57:56.634  INFO [currency-exchange,,] 1 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+currency-exchange_1    | 2021-02-15 04:57:58.663  INFO [currency-exchange,,] 1 --- [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+currency-exchange_1    | 2021-02-15 04:57:59.127  WARN [currency-exchange,,] 1 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+currency-exchange_1    | 2021-02-15 04:57:59.577  INFO [currency-exchange,,] 1 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+currency-exchange_1    | 2021-02-15 04:57:59.846  INFO [currency-exchange,,] 1 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+currency-exchange_1    | 2021-02-15 04:57:59.966  INFO [currency-exchange,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+currency-exchange_1    | 2021-02-15 04:57:59.975  INFO [currency-exchange,,] 1 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+currency-exchange_1    | 2021-02-15 04:58:00.045  INFO [currency-exchange,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+currency-exchange_1    | 2021-02-15 04:58:00.045  INFO [currency-exchange,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+currency-exchange_1    | 2021-02-15 04:58:00.045  INFO [currency-exchange,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+currency-exchange_1    | 2021-02-15 04:58:00.045  INFO [currency-exchange,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+currency-exchange_1    | 2021-02-15 04:58:00.045  INFO [currency-exchange,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+currency-exchange_1    | 2021-02-15 04:58:00.045  INFO [currency-exchange,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+currency-exchange_1    | 2021-02-15 04:58:00.046  INFO [currency-exchange,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+currency-exchange_1    | 2021-02-15 04:58:00.445  INFO [currency-exchange,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+currency-exchange_1    | 2021-02-15 04:58:00.454  INFO [currency-exchange,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+currency-exchange_1    | 2021-02-15 04:58:00.466  INFO [currency-exchange,,] 1 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+currency-exchange_1    | 2021-02-15 04:58:00.493  INFO [currency-exchange,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1613365080486 with initial instances count: 2
+currency-exchange_1    | 2021-02-15 04:58:00.533  INFO [currency-exchange,,] 1 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CURRENCY-EXCHANGE with eureka with status UP
+currency-exchange_1    | 2021-02-15 04:58:00.538  INFO [currency-exchange,,] 1 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1613365080538, current=UP, previous=STARTING]
+currency-exchange_1    | 2021-02-15 04:58:00.544  INFO [currency-exchange,,] 1 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CURRENCY-EXCHANGE/d52ddf54a7a4:currency-exchange:8000: registering service...
+currency-exchange_1    | 2021-02-15 04:58:00.623  INFO [currency-exchange,,] 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8000 (http) with context path ''
+currency-exchange_1    | 2021-02-15 04:58:00.628  INFO [currency-exchange,,] 1 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8000
+naming-server_1        | 2021-02-15 04:58:00.702  INFO 1 --- [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CURRENCY-EXCHANGE/d52ddf54a7a4:currency-exchange:8000 with status UP (replication=false)
+currency-exchange_1    | 2021-02-15 04:58:00.707  INFO [currency-exchange,,] 1 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CURRENCY-EXCHANGE/d52ddf54a7a4:currency-exchange:8000 - registration status: 204
+currency-exchange_1    | 2021-02-15 04:58:00.709  INFO [currency-exchange,,] 1 --- [           main] i.m.c.CurrencyExchangeServiceApplication : Started CurrencyExchangeServiceApplication in 51.035 seconds (JVM running for 52.548)
+naming-server_1        | 2021-02-15 04:58:01.210  INFO 1 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CURRENCY-EXCHANGE/d52ddf54a7a4:currency-exchange:8000 with status UP (replication=true)
+api-gateway_1          | 2021-02-15 04:58:18.671  INFO [api-gateway,,] 1 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+api-gateway_1          | 2021-02-15 04:58:18.672  INFO [api-gateway,,] 1 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+api-gateway_1          | 2021-02-15 04:58:18.672  INFO [api-gateway,,] 1 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+api-gateway_1          | 2021-02-15 04:58:18.672  INFO [api-gateway,,] 1 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+api-gateway_1          | 2021-02-15 04:58:18.672  INFO [api-gateway,,] 1 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+api-gateway_1          | 2021-02-15 04:58:18.672  INFO [api-gateway,,] 1 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+api-gateway_1          | 2021-02-15 04:58:18.672  INFO [api-gateway,,] 1 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+api-gateway_1          | 2021-02-15 04:58:18.688  INFO [api-gateway,,] 1 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+currency-conversion_1  | 2021-02-15 04:58:21.673  INFO [currency-conversion,,] 1 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+currency-conversion_1  | 2021-02-15 04:58:21.673  INFO [currency-conversion,,] 1 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+currency-conversion_1  | 2021-02-15 04:58:21.673  INFO [currency-conversion,,] 1 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+currency-conversion_1  | 2021-02-15 04:58:21.673  INFO [currency-conversion,,] 1 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+currency-conversion_1  | 2021-02-15 04:58:21.673  INFO [currency-conversion,,] 1 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+currency-conversion_1  | 2021-02-15 04:58:21.673  INFO [currency-conversion,,] 1 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+currency-conversion_1  | 2021-02-15 04:58:21.674  INFO [currency-conversion,,] 1 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+currency-conversion_1  | 2021-02-15 04:58:21.699  INFO [currency-conversion,,] 1 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+naming-server_1        | 2021-02-15 04:58:46.829  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+api-gateway_1          | 2021-02-15 04:59:19.059  INFO [api-gateway,,] 1 --- [or-http-epoll-2] c.i.m.apigateway.LoggingFilter           : Path of the request received -> /currency-exchange/from/USD/to/INR
+currency-exchange_1    | 2021-02-15 04:59:19.483  INFO [currency-exchange,,] 1 --- [nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+currency-exchange_1    | 2021-02-15 04:59:19.484  INFO [currency-exchange,,] 1 --- [nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+currency-exchange_1    | 2021-02-15 04:59:19.490  INFO [currency-exchange,,] 1 --- [nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+currency-exchange_1    | 2021-02-15 04:59:19.860  INFO [currency-exchange,95ade1f125a77d7b,df1461a9c903a804] 1 --- [nio-8000-exec-1] c.i.m.c.CurrencyExchangeController       : retrieveExchangeValue called with USD to INR
+currency-exchange_1    | Hibernate: select currencyex0_.id as id1_0_, currencyex0_.conversion_multiple as conversi2_0_, currencyex0_.environment as environm3_0_, currencyex0_.currency_from as currency4_0_, currencyex0_.currency_to as currency5_0_ from currency_exchange currencyex0_ where currencyex0_.currency_from=? and currencyex0_.currency_to=?
+naming-server_1        | 2021-02-15 04:59:46.830  INFO 1 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
